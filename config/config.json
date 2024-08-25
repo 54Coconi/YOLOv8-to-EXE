@@ -1,0 +1,8 @@
+{
+    "model_path": "./models",
+    "default_model": "./models/staff-zone.pt",
+    "default_image_path": "./images",
+    "output_path": "./output/result_images",
+    "cut_image_path": "./output/cut_images",
+    "confidence": 0.8
+}
