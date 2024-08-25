@@ -1,0 +1,2 @@
+# YOLOv8-to-EXE
+基于tkinter开发的用于yolov8模型推理的exe可执行程序，无需python环境即可运行模型推理
