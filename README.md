@@ -8,3 +8,22 @@
 ```bash
 pip install -r requirement.txt
 ```
+配置好环境后，先运行`main.py`，如果程序正常启动并且各个功能正常，则可以运行：
+```bash
+pyinstaller YOLOv8.spec
+```
+`YOLOv8.spec`是用于pyinstaller来打包程序的脚本文件，如果不了解该文件，建议不要修改任何内容。还有一个文件是`clear.py`，该文件是用于清理打包后的程序在运行时产生的临时文件，一般是以**`_MEI+随机数字`**命名的文件夹（在windows下大小在**4.33G**左右），所以如果程序**异常终止**、**崩溃**或**直接关闭“黑窗口”** 则会导致临时文件残留问题，鉴于该临时文件比较大，个人建议每次运行结束后都运行一次清理程序，当然该清理程序也可以打包后使用，请运行：
+```bash
+pyinstaller clear.spec
+```
+打包后的程序比较大，大概**2.4G左右**，当然你可以改用其它方案，这里不做赘述
+
+## 程序界面
+主窗口
+![主窗口](https://github.com/54Coconi/picture-repo/blob/main/img/yolov8%20to%20exe.png)
+检测界面
+![检测界面](https://github.com/54Coconi/picture-repo/blob/main/img/yolov8%20to%20exe1.png)
+检测目标抠出图片
+![检测目标抠出图片](https://github.com/54Coconi/picture-repo/blob/main/img/cut%20img.png)
+
+
